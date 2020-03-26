@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AppTaker]">
+  <listeners>
+    <listener class-name="Utilities.Listeners"/>
+    <listener class-name="Utilities.Reporting"/>
+  </listeners>
+  <test name="Windows AppTaker Automation">
+    <classes>
+      <class name="Test.CheckoutAccountTests"/>
+    </classes>
+  </test> <!-- Windows AppTaker Automation -->
+</suite> <!-- Failed suite [AppTaker] -->

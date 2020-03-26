@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AppTaker" configfailurepolicy="continue"
+	thread-count="1" parallel="classes" preserve-order="true">
+
+	<listeners>
+		<listener class-name="Utilities.Listeners" />
+		<listener class-name="Utilities.Reporting" />
+	</listeners>
+
+	<test name="AppTaker Association" enabled="false">
+		<parameter name="accountType" value="association" />
+		<classes>
+			<class name="Test.LoginTest" />
+			<class name="Test.CheckoutAccountTest" />
+			<class name="Test.OverviewAccountTest" />
+			<class name="Test.EmployeeAddTest" />
+			<class name="Test.EmployeeEditTest" />
+			<class name="Test.AddDependentTest" />
+			<class name="Test.EditDependentTest" />
+			<class name="Test.Beneficiaries_AddTest" />
+			<class name="Test.Beneficiaries_EditTest" />
+			<class name="Test.QLE_LifeEvent_AddTest" />
+			<class name="Test.QLE_LifeEvent_EditTest" />
+			<class name="Test.GenericShopTest" />
+			<class name="Test.Checkin" />
+			<class name="Test.RemoveAccount" />
+			<class name="Test.Logout" />
+		</classes>
+	</test>
+	
+	<test name="AppTaker Payroll sanity" enabled="true">
+		<parameter name="accountType" value="payroll" />
+		<classes>
+			  <class name="Test.LoginTest" />
+			<class name="Test.CheckoutAccountTest" /> 
+			<class name="Test.OverviewAccountTest" /> 
+			<class name="Test.EmployeeAddTest" />
+			<class name="Test.EmployeeEditTest" />
+			 <class name="Test.AddDependentTest" />
+			<class name="Test.EditDependentTest" />
+			<class name="Test.Beneficiaries_AddTest" />
+			<class name="Test.Beneficiaries_EditTest" />
+			<class name="Test.QLE_LifeEvent_AddTest" />
+			<class name="Test.QLE_LifeEvent_EditTest" /> 
+			<class name="Test.GenericShopTest" />
+			<class name="Test.Checkin" />
+			<class name="Test.RemoveAccount" />
+			<class name="Test.Logout" /> 
+		</classes>
+	</test>
+	
+	<test name="AppTaker Association" enabled="false">
+		<parameter name="accountType" value="union" />
+		<classes>
+			 <class name="Test.LoginTest" /> <class name="Test.CheckoutAccountTest" 
+				/> <class name="Test.OverviewAccountTest" /> <class name="Test.EmployeeAddTest" 
+				/> <class name="Test.EmployeeEditTest" /> <class name="Test.AddDependentTest" 
+				/> <class name="Test.EditDependentTest" /> <class name="Test.Beneficiaries_AddTest" 
+				/> <class name="Test.Beneficiaries_EditTest" /> <class name="Test.QLE_LifeEvent_AddTest" 
+				/> <class name="Test.QLE_LifeEvent_EditTest" /> 
+			<class name="Test.GenericShopTest" />
+			<class name="Test.Checkin" /> <class name="Test.RemoveAccount" /> 
+				<class name="Test.Logout" /> 
+		</classes>
+	</test>
+	
+	
+	
+	<test name="AppTaker Payroll Regression" enabled="false">
+		<parameter name="accountType" value="payroll" />
+		<classes>
+			 <class name="Test.Logout" />
+			
+		</classes>
+	</test>
+	
+
+</suite>
